@@ -1,0 +1,72 @@
+.stickeyBoxes{
+    .box{
+        background-color: #E6F1F9;
+        margin-bottom: 45px;
+        padding: 40px 50px;
+        text-align: start;
+        position: -webkit-sticky;
+        position: sticky;
+        .box-header{
+            font-size: 26px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 32px;
+            text-align: start;
+        }
+        .slider{
+            justify-content: flex-start;
+            margin-bottom: 7em;
+            .absolute-2{
+                transition: all .5s ease-in-out;
+            }
+            &:hover{
+                .absolute-2{
+                    transform: translateX(-29px);
+                }
+            } 
+            .absolute-1{
+                transition: all .5s ease-in-out;
+            }
+            &:hover{
+                .absolute-1{
+                    transform: translateX(29px)
+                }
+            }
+        }
+        .spinner{
+            justify-content: flex-start;
+            margin-bottom: 7em;
+            transition: 0.5s;
+            .animation-box{
+                display: flex;
+                transition: transform 0.5s ease;
+            }
+            &:hover{
+                .animation-box{
+                    transform: rotate(450deg);
+                    transition: transform 0.5s ease;
+                }
+            } 
+        }
+        .circle{
+            margin-bottom: 7em;
+        }
+        .text{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            font-family: 'Karla', sans-serif;
+        }
+    }
+    .box-1{
+        top: 120px;
+    }
+    .box-2{
+        top: 160px;
+        background-color: #D7E7F3;
+    }
+    .box-3{
+        top: 200px;
+        background-color: #AFC9DB;
+    }
+}
