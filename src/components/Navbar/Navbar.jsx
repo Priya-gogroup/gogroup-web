@@ -36,7 +36,7 @@ const NavbarComponent = () => {
         <div className="navbar" ref={headerEl}>
             <div className="right-box">
                 <a href="/" className="logo">
-                  <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1).png" srcSet="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1)-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1).png 1000w" sizes="151px" alt="logo" width="151" className="image-55"/>
+                  <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1).png" srcSet="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1)-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1).png 1000w" sizes="151px" alt="logo" width="151" height='auto' className="image-55"/>
                 </a>
             
             </div>

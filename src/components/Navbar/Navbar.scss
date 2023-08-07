@@ -101,7 +101,7 @@
     }
     .close-icon{
         z-index: 0;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         justify-content: center;
         align-items: center;
@@ -115,6 +115,10 @@
         color: #fff;
         text-decoration: none;
         cursor: pointer;
+        &:hover{
+            transform: rotate(180deg);
+            transition: all .5s ease-in-out;
+        }
     }
     
     .top-link{
@@ -136,6 +140,8 @@
     position: fixed;
     background-color: #fff;
     width: 100%;
+    height: 100%;
+    z-index: 1;
     .navlink{
         display: block;
         color: #1b222c;

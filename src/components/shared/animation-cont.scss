@@ -1,0 +1,9 @@
+.animated-ease-div {
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+  }
+  
+.animated-ease-div.visible {
+  opacity: 1;
+  transform: translateY(-1.2em);
+}
