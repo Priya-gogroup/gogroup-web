@@ -5,35 +5,31 @@ import menuIcon from '../../logo.svg';
 const NavbarComponent = () => {
     const [displayAnnouncement, setDisplayAnnouncement] = useState(true);
     const [toggleMenuIcon, setToggleMenuIcon] = useState(false);
-    const [sticky, setSticky] = useState({ isSticky: false, offset: 0 });
     const headerEl = createRef();
+    const [stickyClass, setStickyClass] = useState('');
     const toggleMenu = () => {
         setToggleMenuIcon(!toggleMenuIcon)
     }
-    const handleScroll = (elTopOffset, elHeight) => {
-        if (window.pageYOffset > (elTopOffset + elHeight)) {
-          setSticky({ isSticky: true, offset: elHeight });
-        } else {
-          setSticky({ isSticky: false, offset: 0 });
+    const stickNavbar = () => {
+        if (window !== undefined) {
+          let windowHeight = window.scrollY;
+          windowHeight > 150 ? setStickyClass('sticky-nav') : setStickyClass('');
         }
     };
     useEffect(() => {
-        var sticky = headerEl.current.offsetTop;
-        if (window.pageYOffset > 100) {
-            headerEl.current.classList.add("sticky");
-        } else {
-            headerEl.current.classList.remove("sticky");
-        }
-    })
+        window.addEventListener('scroll', stickNavbar);
+        return () => window.removeEventListener('scroll', stickNavbar);
+    }, []);
+
     return (<>
-        <div className={displayAnnouncement ? 'announcement-container' : 'hide'}>
+        <div className={displayAnnouncement ? `announcement-container ${stickyClass}` : `hide ${stickyClass}`}>
             <div className="announcement-box">
                 <a href="#" target="_blank" rel="noopener noreferrer" className='top-link'>Find out why we are regularly called a great place for engineers to work.</a>
                 
             </div>
             <p className='close-icon' onClick={ () => setDisplayAnnouncement(false)}>&#10005;</p>
         </div>
-        <div className="navbar" ref={headerEl}>
+        <div id='navbar' className={`navbar ${stickyClass}`} ref={headerEl} >
             <div className="right-box">
                 <a href="/" className="logo">
                   <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1).png" srcSet="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1)-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1)-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a269396f2085c5865d34b1_Digital%20Pioneers%20Logo%20(1).png 1000w" sizes="151px" alt="logo" width="151" height='auto' className="image-55"/>

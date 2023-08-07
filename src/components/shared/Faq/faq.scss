@@ -1,0 +1,41 @@
+.faq-cont{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 2em;
+    .box{
+        text-align: start;
+        padding: 2px 25px;
+        .faq-box{
+            border-bottom: 1px solid #BCC9D6;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            .ques{
+                display: flex;
+                justify-content: space-between;
+                .q{
+                    font-size: 20px;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 700;
+                    line-height: 30px
+                }
+                .more{
+                    color: #0E61F7;
+                    font-weight: 700;
+                }
+                
+            }
+            .ans, .text{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                font-family: 'Karla', sans-serif;
+            }
+        }
+    }
+    .hide{
+        display: hidden;
+    }
+    .show{
+        display: block;
+    }
+}

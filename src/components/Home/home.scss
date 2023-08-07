@@ -206,6 +206,7 @@
     @media screen and (max-width: 1024px) {
         .box-cont{
             grid-template-columns: repeat(1,1fr);
+            place-items: center;
         }
     }
 }
@@ -217,6 +218,10 @@
     margin-right: auto;
     grid-template-columns: 45% 45%;
     width: 90%;
+    height: 44em;
+    position: -webkit-sticky;
+    position: sticky;
+    overflow-x: unset;
     .box{
         .title{
             font-size: 38px;
@@ -247,5 +252,167 @@
 }
 .label-thing{
     @extend .international-cont;
-    
+    .text-block{
+        color: #fff;
+    }
+    .btn-cont-light{
+        justify-content: center;
+    }
+}
+.focus{
+    .grid-box{
+        padding-top: 8em;
+        column-gap: 2em;
+        grid-template-columns: 40% 60%;
+        padding: 4em 2em;
+        .setup-name{
+            font-size: 36px;
+            margin-top: 2em;
+        }
+        .image-cont{
+            display: flex;
+            justify-content: flex-end;
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(1,1fr);
+            place-items: center;
+        }
+    }
+
+}
+.hand-in-hand{
+    column-gap: 4em;
+    .box-cont{
+        grid-template-columns: 50% 35%;
+    }
+    .img-cont{
+        padding: 0 !important;
+        img{
+            width: 85%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        .box-cont{
+            grid-template-columns: repeat(1,1fr);
+            place-items: center;
+            .img-cont{
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+        }
+    }
+}
+.ecosystem-cont{
+    background-color: #E6F1F9;
+    margin-top: 63px;
+    .cont{
+        display: grid;
+        padding: 0 25px;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 3em;
+        place-items: center;
+        .picture-grid-container{
+            text-align: right;
+            padding-right: 48%;
+            position: relative;
+            img{
+                max-width: 100%;
+                vertical-align: middle;
+                display: inline-block;
+            }
+            .picture-grid-column{
+                width: 54%;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+                left: auto;
+                right: 0%;
+            }
+        }
+        .ecosystem-desc{
+            text-align: start;
+            padding-right: 8em;
+            .title{
+                font-size: 36px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                line-height: 42px
+            }
+            .text-block{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                font-family: 'Karla', sans-serif;
+            }
+            .btn-cont-dark-blue{
+                margin-top: 25px;
+                margin-bottom: 20px;
+                button:hover{
+                    border-color: #000;
+                }
+            }
+        }
+        @media screen and (max-width:1024px) {
+            grid-template-columns: repeat(1,1fr);
+            .ecosystem-desc{
+                padding: 0 2em;
+            }
+        }
+        @media screen and (min-width: 1280px){
+            .picture-grid-container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+            }
+        }
+    } 
+}
+.blue-bg{
+    background-color: #E6F1F9;
+    margin-top: 1px;
+    .mentorship-cont{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 25px;
+        .box{
+            .title{
+                font-size: 45px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                line-height: 60px;
+                text-align: start;
+            }
+            .text-block{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
+                font-family: 'Karla', sans-serif;
+                text-align: start;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    @media screen and (min-width: 1400px) {
+        margin-top: 63px;
+    }
+}
+.lh-25{
+    line-height: 25px;
+}
+.international-cont{
+    .lh-25{
+        button{
+            min-width: 145px;
+        }
+    }
 }

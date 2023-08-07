@@ -691,6 +691,21 @@
       border: 2px solid #fff;
   }
 }
+.btn-cont-dark-blue{
+  @extend .btn-cont;
+  button{
+    color: #ffffff;
+    background-color: #000;
+    border: 2px solid #000;
+    line-height: 12px;
+    padding: 15px 22px;
+  }
+  button:hover{
+    color: #0C60F7;
+    background-color: #ffffff;
+    border: 2px solid #0C60F7;
+  }
+}
 @keyframes anim-lineUp {
   0% {
     opacity: 0;

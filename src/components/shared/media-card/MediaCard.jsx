@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import './media-card.scss';
+import '../grid.scss';
 
 const MediaCard = ({setupName, title, texts, imageUrl, button="", link="", buttonClass="", setUpLink=""}) => {
     const ref = useRef(null);
@@ -40,7 +41,7 @@ const MediaCard = ({setupName, title, texts, imageUrl, button="", link="", butto
                             return <p key={text.index} className='text'>{text.text}</p>
                         })
                     }
-                    { link && <a href="/link"><button className='buttonClass'> {button} </button></a>}
+                    { link && <div className={buttonClass}> <a href={link}><button> {button} </button></a> </div> }
                 </div>
                 <div className="box image-cont">
                     <img src={imageUrl} alt='image-url' />
