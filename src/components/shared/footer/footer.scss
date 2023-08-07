@@ -1,0 +1,56 @@
+.footer-component{
+    padding: 0 25px 49px;
+    margin: 0 auto 1px;
+    position: relative;
+    padding-top: 30px;
+    .footer-cont{
+        display: flex;
+        flex-wrap: wrap;
+        .title{
+            font-size: 21px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 25px
+        }
+        .about-us{
+            width: 26%;
+            text-align: start;
+           
+        }
+        .menu-flex-box{
+            .title{
+                padding-left: 40px;
+                margin-bottom: 0%;
+                text-align: start;
+            }
+            .flex{
+                display: flex;
+                .menu{
+                    text-align: start;
+                    
+                    .list-cont{
+                        .list{
+                            font-size: 16px;
+                            font-weight: 700;
+                            line-height: 25px;
+                            font-family: 'Karla', sans-serif;
+                            width: 10em;
+                            min-height: 35px;
+                            a{
+                                text-decoration: none;
+                                color: #000;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            
+        }
+        
+    }
+    .notice{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
