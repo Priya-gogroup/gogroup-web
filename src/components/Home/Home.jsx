@@ -293,7 +293,7 @@ const HomeComponent = () => {
             <div className="international-cont">
                 <AnimatedCont>
                     <div className="container">
-                        <div className="box-cont">
+                        <div className="box-cont gap-4">
                             <div className="box">
                                 <h2 className='header'> Are you looking for an opportunity to take your career to the next level? </h2>
                                 <br/>
