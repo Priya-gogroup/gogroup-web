@@ -176,6 +176,7 @@
             line-height: 42px;
             font-family: 'Montserrat', sans-serif;
             margin-bottom: 0;
+            overflow: hidden;
         }
         .text-block,.sub-header{
             font-size: 18px;
@@ -230,6 +231,7 @@
             line-height: 44px;
             text-align: start;
             letter-spacing: -1.5px;
+            overflow: hidden;
         }
     }
     .sticky-box{
@@ -257,6 +259,9 @@
     }
     .btn-cont-light{
         justify-content: center;
+    }
+    .header{
+        overflow: hidden;
     }
 }
 .focus{

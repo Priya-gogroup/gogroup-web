@@ -44,7 +44,7 @@ const MediaCard = ({setupName, title, texts, imageUrl, button="", link="", butto
                     { link && <div className={buttonClass}> <a href={link}><button> {button} </button></a> </div> }
                 </div>
                 <div className="box image-cont">
-                    <img src={imageUrl} alt='image-url' />
+                    <img src={imageUrl} alt={setupName} />
                 </div>
             </div>
     </>)

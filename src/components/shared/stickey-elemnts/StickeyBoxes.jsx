@@ -1,4 +1,3 @@
-import { useEffect, useRef } from 'react';
 import { Circle, SliderCircle, Spinner } from '../usp-animations/UspAnimation';
 import './stickey-boxes.scss';
 
