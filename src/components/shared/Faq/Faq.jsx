@@ -3,20 +3,6 @@ import './faq.scss';
 
 
 const FaqComponent = ({faqList}) => {
-    const toggleList = (id,e) => {
-        const ansDiv = document.getElementById(id);
-       
-        if(ansDiv.classList.contains('hide')){
-            console.log(ansDiv, ansDiv.classList,"jj");
-            ansDiv.classList.remove = 'hide';
-            ansDiv.classList.add = 'visisble';
-           
-        }else{
-            ansDiv.classList.add = 'hide';
-            ansDiv.classList.remove = 'visisble';
-        }
-    }
-
     return (
         <>
             <div className="faq-cont">
