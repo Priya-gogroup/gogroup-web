@@ -210,13 +210,13 @@
     display: flex;
     .image-bg{
         width: 170%;
-        background-image: url('https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5943ef10de5d4_7.png');
         background-position: 50%;
         background-repeat: no-repeat;
         background-size: cover;
         justify-content: center;
         align-items: center;
         height: 500px;
+        animation: MoveUpDown 2s ease-in;
     }
     .rating{
         width: 100%;
@@ -228,6 +228,7 @@
             left: 75%;
             transform: translate(-50%, -50%);
             width: 40%;
+            animation: SlideLeft 2s linear;
         }
     }
     @media screen and (min-width: 1450px) {
@@ -362,11 +363,62 @@
         margin: 0;
     }
 }
+.mt-60{
+    margin-top: 60px;
+}
+.position-cont{
+    background-color: #F2F6FC;
+    margin-top: 60px;
+    padding: 40px;
+    .header-title{
+        font-size: 34px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 40px;
+        overflow: hidden;
+    }
+}
+.gofest-2022{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .title{
+        color: #0C60F7;
+        font-size: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        line-height: 44px;
+        overflow: hidden;
+    }
+    .text-block{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        font-family: 'Karla', sans-serif;
+        text-align: center;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    .img-cont{
+        cursor: pointer;
+        img{
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}
 @keyframes MoveUpDown {
     0% {
       bottom: -20em;
     }
     100% {
       bottom: 0px;
+    }
+}
+@keyframes SlideLeft {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: 75%;
     }
 }

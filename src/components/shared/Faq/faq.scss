@@ -2,9 +2,19 @@
     display: grid;
     grid-template-columns: 30% 70%;
     padding: 2em;
+    position: relative;
     .box{
         text-align: start;
         padding: 2px 25px;
+        position: relative;
+        .heading{
+            position:sticky;
+            top:20px;
+            font-size: 35px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 41px
+        }
         .faq-box{
             border-bottom: 1px solid #BCC9D6;
             padding: 15px 20px;
@@ -30,8 +40,20 @@
                 font-weight: 400;
                 line-height: 25px;
                 font-family: 'Karla', sans-serif;
+                
+            }
+            .ans{
+                width: 95%;
+                a{
+                    color: #0d61f7;
+                }
             }
         }
+    }
+    .box:nth-child(1){
+        position: sticky;
+        left: 0px;
+        float: left;
     }
     .hide{
         display: hidden;

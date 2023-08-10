@@ -67,17 +67,17 @@ const HomeComponent = () => {
         {
             index: 1,
             ques: "What if I don't have a startup idea yet?",
-            ans: "That's okay! We do have an idea bank of ideas we can pitch to you, and if you want to come up with on on your own, we will help you do that."
+            ans: ["That's okay! We do have an idea bank of ideas we can pitch to you, and if you want to come up with on on your own, we will help you do that."]
         },
         {
             index: 2,
             ques: "Where are you located?",
-            ans: "All over! Our team is spread out around the world, from Germany, Spain, and the UK all the way to India. Communication is no issue for us, and neither are timezones."
+            ans: ["All over! Our team is spread out around the world, from Germany, Spain, and the UK all the way to India. Communication is no issue for us, and neither are timezones."]
         },
         {
             index: 3,
             ques: "How can I can contact you?",
-            ans: "Click on the envelope icon in the top right corner! As soon as you submit your request, we'll review it and get back to you as soon as possible!"
+            ans: ["Click on the envelope icon in the top right corner! As soon as you submit your request, we'll review it and get back to you as soon as possible!"]
         },
     ]
     return (<>

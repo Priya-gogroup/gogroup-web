@@ -39,7 +39,7 @@ const NavbarComponent = () => {
             <div className="left-box nav-destop">
                 <a href='#' className="navlink">Blog</a>
                 <a href='/careers' className="navlink">Careers</a>
-                <a href='#' className="navlink">Contact Us</a>
+                <a href='/contact-us' className="navlink">Contact Us</a>
             </div>
             <div className="align-center nav-mobile">
                 <div id="close-menu-icon" className="close-menu left-box" onClick={toggleMenu}>
@@ -52,7 +52,7 @@ const NavbarComponent = () => {
             toggleMenuIcon && <div className='navList'>
                 <a href='#' className="navlink">Blog</a> <br/>
                <a href='/careers' className="navlink">Careers</a><br/>
-               <a href='#' className="navlink">Contact Us</a><br/>
+               <a href='/contact-us' className="navlink">Contact Us</a><br/>
             </div>
         }
     </>)

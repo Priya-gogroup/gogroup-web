@@ -4,12 +4,16 @@ import './careeres.scss';
 import AnimatedCont from '../shared/AnimatedCont';
 import MediaCard from '../shared/media-card/MediaCard';
 import TechCarousel from '../shared/TechCarousel/TechCarousel';
+import FaqComponent from '../shared/Faq/Faq';
+import Popup from '../shared/Popup';
 
 const CareeresComponent = () => {
     const introRef = createRef(null);
     const [showdesc1, setShowDesc1] = useState(false);
     const [showdesc2, setShowDesc2] = useState(false);
     const [showdesc3, setShowDesc3] = useState(false);
+    const [popupState1, setPopupState1] = useState(false);
+    const [popupState2, setPopupState2] = useState(false);
     const scrollToIntro = () => {
         window.location.hash = '#intro';
         introRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -29,6 +33,107 @@ const CareeresComponent = () => {
         'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59466db0de60b_Gatsby_Logo-p-500.png',
         'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59405300de60f_HIghest%2520possible%2520gro-p-500.png'
     ]
+    const faqs = [
+        {
+            index: 1,
+            ques: "Are you a product company, a services company or a consultancy?",
+            ans: [<p>We are none of the above. We are <strong>product startup studio</strong> . We build technology products for new ventures that we launch with new founders and for our partners.</p>,
+            
+            <p>For our <strong>ventures</strong>, we are involved from day 0. We finalize an idea, bring in the founders, test the product market fit, raise funds and build the product from ground up. Our engineers work with our founders to build up a company from scratch. They are in from day 0, and stay with the venture as it scales.</p>,
+
+            <p>For our <strong>partnerships</strong>, we are the tech partner for these companies. We own the complete technology process having the entire engineering team together at GoGroup. GoGroup engineers work very closely with the partner company's founders, product managers and other departments. Our work involves brainstorming ideas, discussing best possible solutions and executing them. We continue to monitor and develop the product together as the company evolves.</p>]
+        },
+        {
+            index: 2,
+            ques: "Are you fully remote?",
+            ans: ["Operationally we are a fully remote company, but we still have offices in both Berlin and Noida, Delhi. There is no obligation to come into the office, but you are more than welcome to come in when you want!"]
+        },
+        {
+            index: 3,
+            ques: "Do I get to work on more than one product?",
+            ans: [<p>Short answer: No. When you join with GoGroup, you typically work on one product together with the rest of your team. However, there can be sub-products,</p>,<p>Another case is when the product is finalised and doesn't require any more development. In this case, we would move our engineers to a new team, new product, or new venture. We are always growing!</p> ]
+        },
+        {
+            index: 4,
+            ques: "How can I apply?",
+            ans: [<p> <a href='https://www.gogroup.tech/careers' target='blank'>Follow this link to our recruiting website to see all open positions!</a>  As soon as you submit your application, we'll review it and get back to you as soon as possible.</p>]
+        },
+    ]
+    const gallery22 = [
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59414fe0de63c_10.png',
+            alt: 'fun-0'
+        },
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594533b0de635_7.png',
+            alt: 'fun-1'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594e2290de637_8.png',
+            alt: 'fun-2'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594753c0de638_6.png',
+            alt: 'fun-3'
+        },
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5944a210de63d_2.png',
+            alt: 'fun-4'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594a4350de63b_9.png',
+            alt: 'fun-5'
+        }
+    ]
+    const gallery21 = [
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5942cb30de633_IMG_3044-min.JPG',
+            alt: 'fun-0'
+        },
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59441a40de628_IMG_3104-min.JPG',
+            alt: 'fun-1'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59419490de62a_IMG_3026-min.JPG',
+            alt: 'fun-2'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594963e0de627_IMG_3041-min%20(1).JPG',
+            alt: 'fun-3'
+        },
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5948b5e0de625_IMG_3048-min.JPG',
+            alt: 'fun-4'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5943aad0de63f_IMG_3066-min.JPG',
+            alt: 'fun-5'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59414dc0de624_IMG_3070-min.JPG',
+            alt: 'fun-6'
+        },
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5942e230de623_IMG_3058-min.JPG',
+            alt: 'fun-7'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59426d10de622_IMG_3157-min.JPG',
+            alt: 'fun-8'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59475c90de61f_IMG_3071-min.JPG',
+            alt: 'fun-9'
+        },
+        {
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594454f0de621_IMG_3132-min.JPG',
+            alt: 'fun-10'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5942a9d0de61e_IMG_2999-min.JPG',
+            alt: 'fun-11'
+        },{
+            img: 'https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59458580de620_IMG_3036-min.JPG',
+            alt: 'fun-12'
+        }
+    ]
+    const showClue = () => {
+        setPopupState1(true);
+    }
+    const showClue2 = () => {
+        setPopupState2(true);
+    }
     return (<>
         <div className="banner">
             <div className="box career-intro">
@@ -123,7 +228,9 @@ const CareeresComponent = () => {
             </div>
         </div>
         <div className="glassdoor-rating">
-            <div className="image-bg"></div>
+            <div className="image-bg">
+                <img src='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5943ef10de5d4_7.png' alt='bg-1'/>
+            </div>
             <div className="rating">
                 <img src='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62989a7df0afc0b02b2db1ab_Untitled%20design.gif' />
             </div>
@@ -178,7 +285,7 @@ const CareeresComponent = () => {
                 <div className="row">
                     <div className="col-md-4">
                         <AnimatedCont>
-                            <a href="https://de.linkedin.com/in/nicoweiler" target="_blank" class="w-inline-block"><img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10.png" sizes="(max-width: 479px) 100vw, (max-width: 991px) 28vw, (max-width: 1279px) 29vw, 310.5px" srcset="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10.png 1080w" loading="lazy" alt=""/></a>
+                            <a href="https://de.linkedin.com/in/nicoweiler" target="_blank" className="w-inline-block"><img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10.png" sizes="(max-width: 479px) 100vw, (max-width: 991px) 28vw, (max-width: 1279px) 29vw, 310.5px" srcSet="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d634349165d4cfb02f2_10.png 1080w" loading="lazy" alt=""/></a>
                         </AnimatedCont>
                         <AnimatedCont>
                             <h3 className="name">Nico Weiler</h3>
@@ -186,7 +293,7 @@ const CareeresComponent = () => {
                     </div>
                     <div className="col-md-4">
                         <AnimatedCont>
-                        <a href="https://www.linkedin.com/in/shishirgoel/" target="_blank" class="w-inline-block"><img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9.png" sizes="(max-width: 479px) 100vw, (max-width: 991px) 28vw, (max-width: 1279px) 29vw, 310.5px" srcset="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9.png 1080w" alt=""/></a>
+                        <a href="https://www.linkedin.com/in/shishirgoel/" target="_blank" className="w-inline-block"><img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9.png" sizes="(max-width: 479px) 100vw, (max-width: 991px) 28vw, (max-width: 1279px) 29vw, 310.5px" srcSet="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d7e5e886842fe4be29c_9.png 1080w" alt=""/></a>
                         </AnimatedCont>
                         <AnimatedCont>
                             <h3 className="name">Shishir Goel</h3>
@@ -194,7 +301,7 @@ const CareeresComponent = () => {
                     </div>
                     <div className="col-md-4">
                         <AnimatedCont>
-                        <a href="https://de.linkedin.com/in/saschaweiler1" target="_blank" class="w-inline-block"><img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 28vw, (max-width: 1279px) 29vw, 310.5px" srcset="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11.png 1080w" alt=""/></a>
+                        <a href="https://de.linkedin.com/in/saschaweiler1" target="_blank" className="w-inline-block"><img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11.png" loading="lazy" sizes="(max-width: 479px) 100vw, (max-width: 991px) 28vw, (max-width: 1279px) 29vw, 310.5px" srcSet="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11-p-500.png 500w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11-p-800.png 800w, https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a73d88a43450e7b8235edc_11.png 1080w" alt=""/></a>
                         </AnimatedCont>
                         <AnimatedCont>
                             <h3 className="name">Sascha Weiler</h3>
@@ -203,6 +310,49 @@ const CareeresComponent = () => {
                 </div>
             </div>
         </div>
+        <div className="position-cont">
+            <div className="container">
+                <AnimatedCont>
+                    <h2 className="header-title">Open positions</h2>
+                </AnimatedCont>
+            </div>
+        </div>
+        <AnimatedCont>
+            <div className="mt-60">
+                <FaqComponent faqList={faqs} />
+            </div>
+        </AnimatedCont>
+        <div className="gofest-2022">
+            <div className="container" onClick={showClue}>
+                <h2 className="title">GoFest 2022</h2>
+                <div className="img-cont">
+                    <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59474710de636_1.png" alt="gofest-2022" />
+                    <div className="text-block">Tap the photo to see more pictures</div>
+                </div>
+            </div>
+        </div>
+        <div className="gofest-2022">
+            <div className="container" onClick={showClue2}>
+                <h2 className="title">GoFest 2021</h2>
+                <div className="img-cont">
+                    <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59453740de630_IMG_2994-min-p-2000.jpeg" alt="gofest-2022" />
+                    <div className="text-block">Tap the photo to see more pictures</div>
+                </div>
+            </div>
+        </div>
+        
+        {popupState1 && (
+            <Popup
+            clue={gallery22}
+            onClick={() => setPopupState1(false)}
+            />
+        )}
+        {popupState2 && (
+            <Popup
+            clue={gallery21}
+            onClick={() => setPopupState2(false)}
+            />
+        )}
     </>)
 }
 

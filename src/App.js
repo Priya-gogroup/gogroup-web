@@ -1,6 +1,7 @@
 
 import './App.css';
 import CareeresComponent from './components/Careers/Careeres';
+import ContactUs from './components/Contact/Contact';
 import HomeComponent from './components/Home/Home';
 import NavbarComponent from './components/Navbar/Navbar';
 import ToptoBottom from './components/shared/ScrollToTop';
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/careers">
             <CareeresComponent />
+          </Route>
+          <Route path="/contact-us">
+              <ContactUs />
           </Route>
         </Switch>
       </Router>
