@@ -19,14 +19,14 @@ const FooterComponent = () => {
                                 <li className="list"> <a href="/" target="_blank" rel="noopener noreferrer">Home</a></li>
                                 <li className="list"><a href="/careers" target="_blank" rel="noopener noreferrer">Careers</a></li>
                                 <li className="list"><a href="/" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                                <li className="list"><a href="/" target="_blank" rel="noopener noreferrer">Contact us</a></li>
+                                <li className="list"><a href="/contact-us" target="_blank" rel="noopener noreferrer">Contact us</a></li>
                                 
                             </ul>
                         </div>
                         <div className="menu">
                             <ul className="list-cont">
-                            <li className="list"><a href="/" target="_blank" rel="noopener noreferrer">Data Protection</a></li>
-                                <li className="list"><a href="/" target="_blank" rel="noopener noreferrer">Imprint</a></li>
+                            <li className="list"><a href="/dataprotection" target="_blank" rel="noopener noreferrer">Data Protection</a></li>
+                                <li className="list"><a href="/imprint" target="_blank" rel="noopener noreferrer">Imprint</a></li>
                             </ul>
                         </div>
                     </div>

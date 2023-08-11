@@ -11,6 +11,7 @@
     row-gap: 1em;
     align-items: center;
     margin-bottom: 1em;
+    padding: 0 4em;
     .left-intro{
         width: 34%;
         justify-content: center;
@@ -42,7 +43,6 @@
             display: inline-block;
             height: 100%;
             max-width: 760px;
-            margin-top: 60px;
             width: 100%;
         }
     }

@@ -199,7 +199,7 @@ const HomeComponent = () => {
                                     </p>
                                 </div>
                                 <div className="btn-cont-light">
-                                    <a href='#' > <button> GET IN TOUCH NOW</button> </a>
+                                    <a href='/contact-us' > <button> GET IN TOUCH NOW</button> </a>
                                 </div>
                             </div>
                         </div>
@@ -210,7 +210,7 @@ const HomeComponent = () => {
 
             <div className="focus">
                 <div className="container">
-                    <MediaCard key='Focus-and-dedication' setupName='Full Focus & Dedication.' title='' texts={[{text :`We believe that focus and passion is the basis for building successful ventures. Therefore each of our team members works with full dedication on one venture - exclusively.`, index:'focus-1'},{text:`With that everyone can develop a passion and a deep understanding for the product and venture. From what we saw so far, this is what fosters a great culture and mindset in the team and team-members can grow best on a personal level`, index:'focus-2'}]} imageUrl='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a1bc9a16a1ef26c7f0ecf9_pexels-sohel-patel-1804035-p-1080.jpeg'  setUpLink='' button='GET IN TOUCH NOW' buttonClass='btn-cont-dark-blue' link='#' />
+                    <MediaCard key='Focus-and-dedication' setupName='Full Focus & Dedication.' title='' texts={[{text :`We believe that focus and passion is the basis for building successful ventures. Therefore each of our team members works with full dedication on one venture - exclusively.`, index:'focus-1'},{text:`With that everyone can develop a passion and a deep understanding for the product and venture. From what we saw so far, this is what fosters a great culture and mindset in the team and team-members can grow best on a personal level`, index:'focus-2'}]} imageUrl='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62a1bc9a16a1ef26c7f0ecf9_pexels-sohel-patel-1804035-p-1080.jpeg'  setUpLink='' button='GET IN TOUCH NOW' buttonClass='btn-cont-dark-blue' link='/contact-us' />
                 </div>
             </div>
             <div className="international-cont hand-in-hand">
@@ -262,7 +262,7 @@ const HomeComponent = () => {
                                 <p className="text-block">Through our proven and successful ecosystem of founders, tech engineers, product managers, designers, and more, we can build the right path for you and grow together successfully for the long term.</p>
                                 <p className="text-block">Let's connect, so you can learn more.</p>
                                 <div className="btn-cont-dark-blue">
-                                    <a href='#'>
+                                    <a href='/contact-us'>
                                         <button>GET IN TOUCH NOW</button>
                                     </a>
                                 </div>
@@ -301,7 +301,7 @@ const HomeComponent = () => {
                                     We are always looking for individuals who are passionate about building the future. Learn more about what positions are availble and what it is like to work at GoGroup.
                                 </div>
                                 <div className="btn-cont-light lh-25">
-                                    <a href='#' > <button> FIND OUT MORE</button> </a>
+                                    <a href='/careers' > <button> FIND OUT MORE</button> </a>
                                 </div>
                             </div>
                             <div className="box img-cont">

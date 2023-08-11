@@ -1,0 +1,72 @@
+.text-block{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Karla', sans-serif;
+    margin-top: 0;
+}
+.center-cont{
+    display: flex;
+    justify-content: center;
+    .top-cont{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        min-height: 500px;
+        width: 350px;
+        margin-bottom: 2em;
+        .data-protection-image{
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            margin-top: auto;
+            margin-bottom: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url('https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594fdc70de58e_pexels-mikael-blomkvist-6476582.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+        }
+        .inner-cont{
+            position: absolute;
+            color: #fff;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            transform: translate(-50%, -50%);
+            .title{
+                font-size: 44px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+                line-height: 52px;
+                overflow: hidden;
+                margin-bottom: 0;
+            }
+            
+        }
+    }
+    .mid-cont{
+        color: #667990;
+        text-align: start;
+        padding: 1em 7em;
+        .text-block{
+            font-weight: 600;
+            strong{
+                font-weight: 700;
+            }
+        }
+        @media screen and (max-width: 1024px) {
+            padding: 2em;
+        }
+    }
+    @media screen and (min-width: 1500px) {
+        .top-cont{
+            width: 100%;
+        }
+    }
+}
+

@@ -216,19 +216,20 @@
         justify-content: center;
         align-items: center;
         height: 500px;
+        overflow: hidden;
         animation: MoveUpDown 2s ease-in;
     }
     .rating{
         width: 100%;
         img{
             width: 110%;
-            z-index: 1006;
+            z-index: 1;
             position: absolute;
             top: 50%;
             left: 75%;
             transform: translate(-50%, -50%);
             width: 40%;
-            animation: SlideLeft 2s linear;
+            animation: SlideLeft 2s ease-in 2;
         }
     }
     @media screen and (min-width: 1450px) {
@@ -250,6 +251,7 @@
         line-height: 40px;
     }
     .grid-cont{
+        display: flex;
         width: 90%;
         justify-content: center;
         flex-wrap: wrap;

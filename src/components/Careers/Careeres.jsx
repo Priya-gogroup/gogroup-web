@@ -229,7 +229,10 @@ const CareeresComponent = () => {
         </div>
         <div className="glassdoor-rating">
             <div className="image-bg">
-                <img src='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5943ef10de5d4_7.png' alt='bg-1'/>
+                <AnimatedCont>
+                    <img src='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5943ef10de5d4_7.png' alt='bg-1'/>
+                </AnimatedCont>
+                
             </div>
             <div className="rating">
                 <img src='https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/62989a7df0afc0b02b2db1ab_Untitled%20design.gif' />
@@ -239,34 +242,40 @@ const CareeresComponent = () => {
             <h3 className='title'>Our Values</h3>
             <div className="row grid-cont">
                 <div className="col-md-4 box">
-                    <div className="img-flex-box">
-                        <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594612f0de580_Triangle_large_blue.png" loading="lazy" width="20" alt=""/>
-                        <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5947dfe0de571_Triangle_inverted_yellow.png" loading="lazy" width="20" alt=""></img>
-                    </div>
-                    <div className="text-box">
-                        <h4 className='text-title'>Supporting Growth</h4>
-                        <p className="text-block">As we grow, we want you to grow too. Therefore, we invest in the development of both our teams and each individual team member. Our team leads are great mentors, and we offer learning opportunities to all our employees.</p>
-                    </div>
+                    <AnimatedCont>
+                        <div className="img-flex-box">
+                            <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594612f0de580_Triangle_large_blue.png" loading="lazy" width="20" alt=""/>
+                            <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e5947dfe0de571_Triangle_inverted_yellow.png" loading="lazy" width="20" alt=""></img>
+                        </div>
+                        <div className="text-box">
+                            <h4 className='text-title'>Supporting Growth</h4>
+                            <p className="text-block">As we grow, we want you to grow too. Therefore, we invest in the development of both our teams and each individual team member. Our team leads are great mentors, and we offer learning opportunities to all our employees.</p>
+                        </div>
+                    </AnimatedCont>
                 </div>
                 <div className="col-md-4 box">
-                    <div className="img-flex-box">
-                        <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594df110de527_Triangle_green.png" loading="lazy" width="20" alt=""/>
-                        <div className="small-blue"></div>
-                    </div>
-                    <div className="text-box">
-                        <h4 className='text-title'>People-first</h4>
-                        <p className="text-block">People are at the core of everything we do. All opportunities start with people and all decisions start with people. We make sure our teams are always taken care of, and are able to balance their work and personal life.</p>
-                    </div>
+                    <AnimatedCont>
+                        <div className="img-flex-box">
+                            <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e594df110de527_Triangle_green.png" loading="lazy" width="20" alt=""/>
+                            <div className="small-blue"></div>
+                        </div>
+                        <div className="text-box">
+                            <h4 className='text-title'>People-first</h4>
+                            <p className="text-block">People are at the core of everything we do. All opportunities start with people and all decisions start with people. We make sure our teams are always taken care of, and are able to balance their work and personal life.</p>
+                        </div>
+                        </AnimatedCont>
                 </div>
                 <div className="col-md-4 box">
-                    <div className="img-flex-box">
-                        <div className="semi-circle"></div>
-                        <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59404d40de53b_Triangle_yellow.png" loading="lazy" width="20" alt=""/>
-                    </div>
-                    <div className="text-box">
-                        <h4 className='text-title'>Long Term Thinking</h4>
-                        <p className="text-block">We all share a passion for speed in our execution. At the same time our focus is on the long term. We want to make sure we are successful and happy together in the long-term.</p>
-                    </div>
+                    <AnimatedCont>
+                        <div className="img-flex-box">
+                            <div className="semi-circle"></div>
+                            <img src="https://uploads-ssl.webflow.com/628754a254e594634d0de4a7/628754a254e59404d40de53b_Triangle_yellow.png" loading="lazy" width="20" alt=""/>
+                        </div>
+                        <div className="text-box">
+                            <h4 className='text-title'>Long Term Thinking</h4>
+                            <p className="text-block">We all share a passion for speed in our execution. At the same time our focus is on the long term. We want to make sure we are successful and happy together in the long-term.</p>
+                        </div>
+                    </AnimatedCont>
                 </div>
             </div>
         </div>
